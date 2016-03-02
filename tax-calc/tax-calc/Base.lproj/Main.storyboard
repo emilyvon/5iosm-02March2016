@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Pixel" translatesAutoresizingMaskIntoConstraints="NO" id="eCH-IB-mcW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TAX-CALCULATOR" translatesAutoresizingMaskIntoConstraints="NO" id="Ejd-Dg-zBp">
+                                <rect key="frame" x="128" y="44" width="345" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="345" id="Dcg-GH-RaZ"/>
+                                    <constraint firstAttribute="height" constant="32" id="kyz-ji-Npx"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your annual salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sji-aR-jL1">
+                                <rect key="frame" x="16" y="126" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="r3Z-JS-ZTl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5d-4r-hda">
+                                <rect key="frame" x="240" y="189" width="121" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="0.35000000000000003" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculaterBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4rL-m2-MbA"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PAY  YOUR TAX!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEe-Ot-FWb">
+                                <rect key="frame" x="176" y="341" width="249" height="145"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your tax" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRT-WH-VhT">
+                                <rect key="frame" x="164" y="278" width="272" height="95"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sji-aR-jL1" secondAttribute="trailing" id="1Pn-lP-t4T"/>
+                            <constraint firstItem="Ejd-Dg-zBp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="8um-R4-4Rz"/>
+                            <constraint firstAttribute="centerX" secondItem="Ejd-Dg-zBp" secondAttribute="centerX" id="9pD-x5-i23"/>
+                            <constraint firstItem="Sji-aR-jL1" firstAttribute="top" secondItem="Ejd-Dg-zBp" secondAttribute="bottom" constant="50" id="Cdm-t8-jAk"/>
+                            <constraint firstItem="eCH-IB-mcW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="TaW-NH-IYV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eCH-IB-mcW" secondAttribute="bottom" id="VAg-gz-s90"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eCH-IB-mcW" secondAttribute="trailing" constant="16" id="bw3-Hr-do6"/>
+                            <constraint firstItem="eCH-IB-mcW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="f5H-vo-2w1"/>
+                            <constraint firstItem="Sji-aR-jL1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hN9-On-e8v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="payYourTaxLbl" destination="MEe-Ot-FWb" id="HEZ-SA-LKe"/>
+                        <outlet property="resultLbl" destination="HRT-WH-VhT" id="UCQ-fj-abS"/>
+                        <outlet property="salaryTxtField" destination="Sji-aR-jL1" id="fNk-qf-RFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pixel" width="1280" height="640"/>
+        <image name="TAX-CALCULATOR" width="1119" height="97"/>
+    </resources>
+</document>
