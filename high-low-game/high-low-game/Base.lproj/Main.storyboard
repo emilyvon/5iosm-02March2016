@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WP1-lS-3rd">
+                                <rect key="frame" x="16" y="122" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="V92-ym-Vo5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Low Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Al8-Jq-w5f">
+                                <rect key="frame" x="16" y="70" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zOk-2y-GfY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdS-5E-LUY">
+                                <rect key="frame" x="276" y="171" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="QM3-gA-x8A"/>
+                                    <constraint firstAttribute="height" constant="30" id="jag-x9-ixg"/>
+                                </constraints>
+                                <state key="normal" title="Guess!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n5a-ck-iU8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LET'S GO!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CU-Hq-buq">
+                                <rect key="frame" x="199" y="228" width="203" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="URb-lr-H1E"/>
+                                    <constraint firstAttribute="height" constant="77" id="Z8M-Sz-myz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGj-0u-IBz">
+                                <rect key="frame" x="243" y="334" width="115" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="CJB-nE-Vq9"/>
+                                    <constraint firstAttribute="height" constant="30" id="ybS-dM-qY7"/>
+                                </constraints>
+                                <state key="normal" title="RESTART GAME">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartGameBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRp-xY-85j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WP1-lS-3rd" firstAttribute="top" secondItem="Al8-Jq-w5f" secondAttribute="bottom" constant="31" id="0Np-Fe-le3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Al8-Jq-w5f" secondAttribute="trailing" id="Bbw-ks-Yaq"/>
+                            <constraint firstItem="Al8-Jq-w5f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CgN-ph-g3p"/>
+                            <constraint firstItem="ZGj-0u-IBz" firstAttribute="top" secondItem="5CU-Hq-buq" secondAttribute="bottom" constant="29" id="L4X-hR-vtd"/>
+                            <constraint firstAttribute="centerX" secondItem="5CU-Hq-buq" secondAttribute="centerX" id="ToH-US-dgz"/>
+                            <constraint firstItem="Al8-Jq-w5f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="VwT-Cc-c3D"/>
+                            <constraint firstItem="WP1-lS-3rd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZBb-Hs-2rG"/>
+                            <constraint firstAttribute="centerX" secondItem="JdS-5E-LUY" secondAttribute="centerX" id="ZZV-ER-i1g"/>
+                            <constraint firstAttribute="centerX" secondItem="ZGj-0u-IBz" secondAttribute="centerX" id="dxE-5n-t9B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WP1-lS-3rd" secondAttribute="trailing" id="eT7-rj-HRd"/>
+                            <constraint firstItem="5CU-Hq-buq" firstAttribute="top" secondItem="JdS-5E-LUY" secondAttribute="bottom" constant="27" id="i8B-Ox-kdF"/>
+                            <constraint firstItem="JdS-5E-LUY" firstAttribute="top" secondItem="WP1-lS-3rd" secondAttribute="bottom" constant="19" id="jQi-TB-WE8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guessBtn" destination="JdS-5E-LUY" id="uKE-H9-Ph1"/>
+                        <outlet property="numberTxtField" destination="WP1-lS-3rd" id="R48-C4-A8R"/>
+                        <outlet property="resultLbl" destination="5CU-Hq-buq" id="t5F-Ku-Zsb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

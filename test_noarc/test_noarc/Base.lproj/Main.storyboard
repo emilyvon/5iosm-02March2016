@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Fee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLg-M4-y5D">
+                                <rect key="frame" x="16" y="15" width="92" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Tjj-yR-ntj"/>
+                                    <constraint firstAttribute="height" constant="21" id="cUb-DP-xBd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="dc3-A4-aDK"/>
+                                    <constraint firstAttribute="width" constant="92" id="tc9-Qh-UXH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter total hours" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fRj-EB-cPF">
+                                <rect key="frame" x="16" y="54" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3DW-gG-zEC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="kBM-FT-2pR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total parking fee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0e7-qw-Zts">
+                                <rect key="frame" x="16" y="102" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="568" id="4vR-cY-PVP"/>
+                                    <constraint firstAttribute="height" constant="21" id="J4F-PW-fJQ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="VZk-4E-WjX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIU-HA-Zis">
+                                <rect key="frame" x="480" y="98" width="89" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="5H7-ug-l8f"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="89" id="6ls-gZ-0J7"/>
+                                    <constraint firstAttribute="height" constant="30" id="FBi-xu-PSQ"/>
+                                    <constraint firstAttribute="width" constant="89" id="VjL-ho-piq"/>
+                                </constraints>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6kV-ei-Udl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zIU-HA-Zis" firstAttribute="top" secondItem="fRj-EB-cPF" secondAttribute="bottom" constant="14" id="9Tx-9j-sWY"/>
+                            <constraint firstItem="0e7-qw-Zts" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9ZD-cc-anE"/>
+                            <constraint firstItem="nLg-M4-y5D" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="H1U-Qe-CIT"/>
+                            <constraint firstItem="fRj-EB-cPF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="OtU-9y-J0i"/>
+                            <constraint firstItem="fRj-EB-cPF" firstAttribute="top" secondItem="nLg-M4-y5D" secondAttribute="bottom" constant="18" id="V3h-Xz-bef"/>
+                            <constraint firstItem="0e7-qw-Zts" firstAttribute="top" secondItem="fRj-EB-cPF" secondAttribute="bottom" constant="18" id="eRt-iw-ZDG"/>
+                            <constraint firstItem="0e7-qw-Zts" firstAttribute="top" secondItem="fRj-EB-cPF" secondAttribute="bottom" constant="18" id="evi-K2-0R3"/>
+                            <constraint firstItem="fRj-EB-cPF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hrD-E7-jMF"/>
+                            <constraint firstItem="nLg-M4-y5D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iXP-aT-N3c"/>
+                            <constraint firstItem="fRj-EB-cPF" firstAttribute="top" secondItem="nLg-M4-y5D" secondAttribute="bottom" constant="18" id="nbm-wo-TrK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zIU-HA-Zis" secondAttribute="trailing" constant="15" id="opk-fT-2j7"/>
+                            <constraint firstItem="zIU-HA-Zis" firstAttribute="top" secondItem="fRj-EB-cPF" secondAttribute="bottom" constant="14" id="q5K-6f-QdZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="feeLbl" destination="0e7-qw-Zts" id="whA-3b-EDa"/>
+                        <outlet property="hoursTxtField" destination="fRj-EB-cPF" id="eYA-qX-waK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
